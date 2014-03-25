@@ -1,0 +1,74 @@
+[
+	{ "keys": ["j", "j"], "command": "exit_insert_mode",
+	    "context":
+	    [
+	        { "key": "setting.command_mode", "operand": false },
+	        { "key": "setting.is_widget", "operand": false }
+	    ]
+	},
+	{ "keys": ["ctrl+i"], "command": "reindent", "args": {"single_line": false} },
+	{ "keys": ["="], "command": "reindent", "args": {"single_line": false} },
+	{ "keys": [";"], "command": "move_to", "args": {"to": "bol"},
+		"context":
+		[
+			{ "key": "setting.command_mode"}
+		] 
+	},
+	{ "keys": ["'"], "command": "move_to", "args": {"to": "eol"},
+		"context":
+		[
+			{ "key": "setting.command_mode"}
+		] 
+	},
+	{ "keys": ["u"], "command": "visual_lower_case",
+		"context":
+		[
+			{ "key": "setting.command_mode"},
+			{"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+		] 
+	},
+	{ "keys": ["U"], "command": "visual_upper_case",
+		"context":
+		[
+			{ "key": "setting.command_mode"},
+			{"key": "selection_empty", "operator": "equal", "operand": false, "match_all": false}
+		] 
+	},
+	{ "keys": ["/"], "command": "show_panel", "args":
+		{
+			"panel": "incremental_find",
+			"select_text": false,
+			"reverse": false
+		},
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{
+		"keys": ["n"], "command": "find_next",
+		"args": {"select_text": false},
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{
+		"keys": ["N"],
+		"command": "find_prev",
+		"args": {"select_text": false},
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{ "keys": ["?"], "command": "show_panel", "args":
+		{
+			"panel": "incremental_find",
+			"select_text": false,
+			"reverse": true
+		},
+		"context": [{"key": "setting.command_mode"}]
+	},
+	{ "keys": [":"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": ":"},
+		"context": [{"key": "setting.command_mode"}] },
+	{ "keys": ["*"], "command": "find_under",
+		"args": {"select_text": false},
+		"context": [{"key": "setting.command_mode"}]
+	},	
+	{ "keys": ["#"], "command": "find_under_prev",
+		"args": {"select_text": false},
+		"context": [{"key": "setting.command_mode"}]
+	}
+]
