@@ -1,0 +1,118 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 15,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<esc>"
+            ]
+        },
+        {
+            "before": [
+                "<C-e>"
+            ],
+            "commands": [
+                {
+                    "command": "cursorLineEnd"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-a>"
+            ],
+            "commands": [
+                {
+                    "command": "cursorHome"
+                }
+            ]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": ":nohl"
+                }
+            ]
+        },
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "^",
+                "i"
+            ]
+        },
+        {
+            "before": [
+                "'"
+            ],
+            "after": [
+                "i"
+            ],
+            "commands": [
+                {
+                    "command": "cursorLineEnd"
+                }
+            ]
+        },
+        {
+            "before": [
+                ";"
+            ],
+            "after": [
+                "i"
+            ],
+            "commands": [
+                {
+                    "command": "cursorHome"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<C-e>"
+            ],
+            "after": [
+                "i"
+            ],
+            "commands": [
+                {
+                    "command": "cursorLineEnd"
+                }
+            ]
+        },
+    ],
+    "vim.leader": "<space>",
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 2,
+}
