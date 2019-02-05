@@ -18,6 +18,16 @@
         },
         {
             "before": [
+                "<C-f>"
+            ],
+            "commands": [
+                {
+                    "command": "cursorRight"
+                }
+            ]
+        },
+        {
+            "before": [
                 "<C-e>"
             ],
             "commands": [
@@ -109,10 +119,11 @@
         },
     ],
     "vim.leader": "<space>",
-    "vim.disableAnnoyingNeovimMessage": true,
+    // "vim.disableAnnoyingNeovimMessage": true,
     "workbench.colorTheme": "Solarized Dark",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
+    "workbench.iconTheme": "material-icon-theme",
 }
